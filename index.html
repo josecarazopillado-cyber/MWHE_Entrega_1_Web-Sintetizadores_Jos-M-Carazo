@@ -27,34 +27,32 @@
 </head>
 <body>
     <div class="bg-video">
-        <video src="" type="video/mp4" loop autoplay muted></video>
+        <video src="media/video/videowebsynth.webm" type="video/webm" loop autoplay muted></video>
     </div>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top navContainer justify-content-center">
+            <div class="container-fluid mx-3">
                 <a class="navbar-brand" href="index.html">VOLTA SYNTH</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 navMenu w-100">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="catalogo.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Soporte</a>
+                            <a class="nav-link" href="soporte.html">Soporte</a>
                         </li>
                     </ul>
-                    <form class="d-flex" id="search-form">
+                    <form class="d-flex justify-content-end" id="search-form">
                         <input class="form-control ms-2" id="search-input" type="search" placeholder="Buscar..." aria-label="Search"/>
-                        <button class="btn" id="search-icon" type="button">
-                            <i class="bi bi-search s-icon"></i>
-                        </button>
+                        <button class="btn" id="s-icon" type="button"><i class="bi bi-search"></i> </button>
                     </form>
                 </div>
             </div>
