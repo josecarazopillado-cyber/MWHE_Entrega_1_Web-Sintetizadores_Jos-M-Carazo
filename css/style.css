@@ -27,6 +27,10 @@ body {
     background-color: var(--bg-negro);
 }
 
+section {
+    padding: 0 1.5rem;
+}
+
 /* MENU */
 .navContainer {
     width: 100%;
@@ -268,6 +272,103 @@ body {
     100% {
         transform: translateX(-50%);
     }
+}
+
+.sec-title {
+    font-family: var(--font-titulos);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: var(--clr-acento);
+}
+
+.card-best {
+    border: none;
+    transition: transform var(--ease);
+}
+
+.card-best:hover {
+    transform: translateY(-4px);
+}
+
+.card-body {
+    background: var(--bg-azul);
+}
+
+.card-sub {
+    font-family: var(--font-titulos);
+    color: var(--clr-acento);
+    letter-spacing: 0.12em;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.card-name {
+    font-family: var(--font-textos);
+    color: var(--texto-tenue);
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.card-price {
+    font-family: var(--font-titulos);
+    color: var(--clr-blanco);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.btn-card {
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    border: 1px solid var(--texto-tenue);
+    color: var(--clr-blanco);
+    font-family: var(--font-textos);
+    border-radius: 0;
+    transition: background var(--ease), transform var(--ease);
+}
+
+.btn-card:hover {
+    background-color: var(--clr-blanco);
+    color: var(--bg-azul);
+    transform: translateY(-2px);
+}
+
+.abt-title {
+    font-family: var(--font-titulos);
+    color: var(--clr-blanco);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.abt-text {
+    font-family: var(--font-textos);
+    font-size: 0.9rem;
+    color: var(--texto-tenue);
+    line-height: 1.5;
+}
+
+.stat {
+    gap: 0.7rem;
+    text-align: left;
+    padding-left: 1rem;
+    border-left: 2px solid var(--clr-acento);
+    width: 30%;
+}
+
+.stat-num {
+    font-family: var(--font-titulos);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--clr-acento);
+}
+
+.stat-label {
+    font-family: var(--font-textos);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    color: var(--texto-tenue);
 }
 
 /* ---------- MEDIA QUERIES RESPONSIVE ---------- */
