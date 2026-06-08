@@ -587,6 +587,60 @@ footer li {
     transform: translateY(-2px);
 }
 
+/* ---------- CATÁLOGO PRODUCTOS ---------- */
+#hero-support {
+    min-height: 60vh;
+    background: var(--bg-azul);
+    padding-top: calc(64px + 3rem) !important;
+}
+
+.acc-item {
+    background-color: var(--bg-azul);
+    border: 1px solid var(--borde-clr);
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.acc-btn {
+    background-color: var(--bg-azul);
+    color: var(--clr-blanco);
+    font-family: var(--font-textos);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.1rem 1.25rem;
+    transition: color var(--ease), background-color var(--ease);
+}
+
+.acc-btn:not(.collapsed) {
+    background-color: var(--bg-azul);
+    color: var(--clr-acento);
+    box-shadow: none;
+}
+
+.acc-btn:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.acc-btn::after {
+    filter: invert(1) brightness(0.6);
+    transition: transform var(--ease), filter var(--ease);
+}
+
+.acc-btn:not(.collapsed)::after {
+    filter: invert(72%) sepia(60%) saturate(400%) hue-rotate(120deg) brightness(95%);
+}
+
+.acc-body {
+    background-color: var(--bg-azul);
+    color: var(--texto-tenue);
+    font-family: var(--font-textos);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 0 1.25rem 1.25rem;
+    border-top: 1px solid var(--borde-clr);
+}
+
 /* ---------- MEDIA QUERIES RESPONSIVE ---------- */
 @media (min-width: 768px) {
     .navbar-brand {
