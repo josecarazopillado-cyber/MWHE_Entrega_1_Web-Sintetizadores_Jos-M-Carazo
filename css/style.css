@@ -133,7 +133,6 @@ section {
     color: var(--clr-acento);
 }
 
-/* HERO */
 #hero {
     position: relative;
     min-height: 100vh;
@@ -145,33 +144,13 @@ section {
     position: absolute;
     z-index: -1;
     inset: 0;
-    /* width: 100%;
-    height: 100%;
-    overflow: hidden; */
 }
 
 .bg-video video {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* @media (min-aspect-ratio: 16/9) {
-    .bg-video video {
-        height: 300%;
-        top: -100%;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .bg-video video {
-        width: 300%;
-        left: -100%;
-    }
-} */
 
 .hero-overlay {
     position: absolute;
@@ -232,7 +211,6 @@ section {
     transform: translateY(-2px);
 }
 
-/* BANNER */
 .banner {
     width: 100%;
     overflow: hidden;
@@ -481,6 +459,13 @@ footer li {
     font-size: 0.7rem;
     color: var(--texto-tenue);
     opacity: 0.5;
+}
+
+/* ---------- CATÁLOGO PRODUCTOS ---------- */
+#hero-cat {
+    min-height: 60vh;
+    background: var(--bg-azul);
+    padding-top: calc(64px + 3rem) !important;
 }
 
 /* ---------- MEDIA QUERIES RESPONSIVE ---------- */
